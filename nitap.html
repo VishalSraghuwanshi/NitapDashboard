@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitap Website</title>
+    <link rel="stylesheet" href="nitap.css">
+     
+</head>
+<body>
+    <div class="container">
+
+          <!-- header -->
+        <div class="header">
+            <div class="header_left">
+                <img class="header_img" src="NitapLogo.png" alt="NitapLogo">
+                <div class="clg_name">
+                    <p>National Institute Of Technology </p>
+                    <p>राष्ट्रीय प्रौद्योगिकी संस्थान,अरुणाचल प्रदेश</p>
+                </div>
+            </div>
+            <div class="header_right">
+                <a href="#">
+                    <img class="Searchimage" src="Searchimage.png" alt="search">
+                </a>
+                <a class="navitems" href="#mydashboard">🙎My Dashboard</a>
+                <a class="navitems" href="#course_page">📑Course</a>
+                <a class="navitems" href="#attendence_page">🙋Attendence</a>
+                <a class="navitems" href="#result_page">🧑‍🎓Result</a>
+                <a class="navitems" href="#notice-board">🪧Notice</a>
+                <a class="navitems" href="#hmc">🏚️Hostel&Mess</a>
+                 <div class="myprofile">
+                <img class="MyImg" src="photo.jpg" alt="MyImg">
+                <p>Vishal Raghuwanshi
+                    <br> BTech CSE
+                </p>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- main page -->
+        <div class="video_contnr">
+           <div class="pagelink_container">
+            <div id="heading">Navigation bar~</div> 
+                <a class="PageLink" href="">🔎About</a>              
+               <a class="PageLink" href="">🙋Help</a>
+               <a class="PageLink" href="">🤔FAQ</a>
+               <a class="PageLink" href="">⚙️Setting</a>
+               <a class="PageLink" href="">📞Contact Us</a>
+               <a class="PageLink" href="">📋 Feedback </a>
+               <a class="PageLink" href="">🚪 Logout  </a>
+           </div>
+            <video id="video" autoplay muted loop playsinline >
+       <source src="NitapVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+     <button id="muteBtn" type="button">🔇</button>
+        </div>
+
+
+    <script>
+        const video = document.getElementById("video");
+        const button = document.getElementById("muteBtn");
+
+        button.addEventListener("click", function () {
+
+            video.muted = !video.muted;
+
+            if (video.muted) {
+                button.textContent = "🔇";
+            } else {
+                button.textContent = "🔊";
+            }
+
+        });
+    </script>
+          <!-- my dashboard -->
+        <div class="mydashboard" id="mydashboard">
+            <div class="item1 " id="header">
+                <h1>Student Details</h1>
+              <div id="pic_detail">
+                <img src="photo.jpg" alt="myphoto">
+                      <main>
+                <p id="greeting"> Welcome, Vishal Raghuwanshi !</p>
+                  <div id="studentDetail">
+                <p>Course: <br><strong>B.Tech Computer Science<br> & Engineering</strong> </p>
+                <p>Roll No: <br> <strong>CSE/25/XXXX</strong>  </p>
+                <p>Semester: <br> <strong>Second</strong> </p>
+                <p>email ID:<br><strong>vishal@gmail.com</strong></p>
+                <P>Contact No. <br> <strong>8989420462</strong></P>
+                  </div>
+                       </main>
+              </div>  
+            </div>
+
+            <div class="item1" id="footer1">
+                <p>Current CGPA:</p>
+                <img class="footerImg" src="image1.png" alt="">
+                <p>CGPA:<b>8.93</b></p>
+             </div>
+
+              <div class="item1" id="footer2">
+                <p> Attendence:</p>
+                <img class="footerImg" src="image2.png" alt="">
+                <p>Attendence:<b>85%</b></p>
+             </div>
+
+              <div class="item1" id="footer3">
+                <p> Credits:</p>
+                <img class="footerImg" src="image3.png" alt="">
+                <p>Credits:<b>25</b></p>
+             </div>
+
+             <div class="item1" id="footer4">
+                <p> SGPA:</p>
+                <img class="footerImg" src="image4.png" alt="">
+                <p>SGPA:<b>9.13</b></p>
+             </div>
+
+            <!-- <div class="item1" id="footer2"> Attendance:</div>
+            <div class="item1" id="footer3">Credits:</div>
+            <div class="item1" id="footer4">Current Sem.:</div> -->
+        </div>
+
+        <!-- course -->
+         <div class="course" id="course_page">
+            <h2 id="course_heading">Course Detail</h2>
+          <table>
+            <tr>
+                <th>Image</th>
+                <th>Course</th>
+                <th>Code</th>
+                <th>Credits</th>
+                <th>Faculty</th>
+            </tr>
+            <tr>
+                <td ><img class="sir_pic" src="image11.png" alt=""></td >
+                <td >Engineering Mathematics-III</td >
+                <td >BS-2101</td >
+                <td >3 </td >
+                <td >Dr. Susanta Maity</td >
+            </tr>
+            <tr>
+                <td ><img class="sir_pic" src="image12.png" alt=""></td >
+                <td >Discrete Mathematics </td >
+                <td >BS-2102 </td >
+                <td >3 </td >
+                <td >Dr. Karam Ratan Singh </td >
+            </tr>
+            <tr>
+                <td ><img class="sir_pic" src="Blank.png" alt=""></td >
+                <td >Computer Organization and Architecture </td >
+                <td >CS-2102 </td >
+                <td >3 </td >
+                <td >Dr. Achyuth  Sarkar</td >
+            </tr>
+            <tr>
+                <td ><img class="sir_pic" src="imageRajatsir.png" alt="">                </td >
+                <td >Object Oriented Programming</td >
+                <td >CS-2101 </td >
+                <td >3</td >
+                <td >Dr. Rajat Subhra Goswami </td >
+            </tr>
+            <tr>
+                <td ><img class="sir_pic" src="SKCsir.png" alt=""></td >
+                <td >Design & Analysis of Algorithm </td >
+                <td >CS-2103 </td >
+                <td >3</td >
+                <td >Dr. Swarnendu Kr. Chakraborty</td >
+            </tr>
+          </table>
+         </div>
+  
+
+         <!-- attendence -->
+
+          <div class="attendence_page" id="attendence_page">
+
+            <H1>Attendence</H1>         
+            <table>
+                <tr>
+                    <td><b>S.No</b></td>
+                    <td><b>Subject</b></td>
+                    <td><b>Graph</b></td>
+                    <td><b>Percent</b></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Engineering Mathematics-III</td>
+                    <td><div class="blocks">
+                    <div style="width: 85%;"></div>
+                      </div></td>
+                    <td>85%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Discrete Mathematics</td>
+                    <td><div class="blocks">
+                    <div style="width: 89%;"></div>
+                  </div></td>
+                    <td>89%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Computer Organization and Architecture</td>
+                    <td><div class="blocks">
+                    <div style="width: 77%;"></div>
+                  </div></td>
+                    <td>77%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Object Oriented Programming</td>
+                    <td><div class="blocks">
+                    <div style="width: 86%;"></div>
+                  </div></td>
+                    <td>86%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Design & Analysis of Algorithm</td>
+                    <td><div class="blocks">
+                    <div style="width: 93%;"></div>
+                    </div></td>
+                    <td>93%</td>
+                </tr>
+            </table>
+            
+
+        </div>
+
+
+        <!-- Result -->
+         <div id="result_page" class="result_page">
+            <div class="Result_item" id="Lheader">
+              <table>
+                    <tr ><p class="Result-head">Progress Card</p></tr>
+                <thead>
+                <tr>
+                   <td>Course Code</td>
+                   <td>Course Title</td>
+                   <td>Credit</td>
+                   <td>Grade</td>
+                   <td>Grade Point</td>
+                </tr>
+                </thead>
+                
+                <tbody>
+                <tr>
+                    <td>BS-2101</td>
+                    <td>Engineering Mathematics-III</td>
+                    <td>4</td>
+                    <td>AA</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>BS-2102</td>
+                    <td>Discrete Mathematics</td>
+                    <td>4</td>
+                    <td>AB</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>CS-2102</td>
+                    <td>Computer Organization and Architecture</td>
+                    <td>4</td>
+                    <td>AA</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>CS-2101</td>
+                    <td>Object Oriented Programming</td>
+                    <td>4</td>
+                    <td>AA</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>CS-2103</td>
+                    <td>Design & Analysis of Algorithm</td>
+                    <td>4</td>
+                    <td>AB</td>
+                    <td>A</td>
+                </tr>
+                </tbody>
+
+                <tr>
+                    <td><b>Total Credit : 20</b></td>
+                    <td><b>Total Credit Taken: 20</td>
+                    <td> <b>SGPA:9.11</b></td>
+                    <td><b>CGPA: 9.23</b></td>
+                </tr>
+
+              </table>
+            </div>
+
+            <div class="Result_item" id="Rheader">
+                
+            <div class="progress-card">
+                <h3>Semester Progress</h3>
+                <p class="subtitle">Academic Performance</p>
+
+                <div class="circle">
+                    <div class="inner-circle">
+                        <h1>90<span>%</span></h1>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <p>Credits Completed <b>20/ 20</b></p>
+                    <p>Average Attendance <b>90%</b></p>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="Result_item" id="Rfooter1">
+                <img src="result.png" alt="">
+            </div>
+
+
+            <div class="Result_item" id="Rfooter2">
+             <div class="sgpa-card">
+
+                    <div class="sgpa-top">
+                        <div>
+                            <p class="sgpa-label">Current SGPA</p>
+                            <h2>9.23</h2>
+                            <p class="sgpa-status">Excellent Performance</p>
+                        </div>
+
+                        <h2>🧑‍🎓</h2>
+                    </div>
+
+                    <div class="sgpa-progress">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                    <div class="sgpa-bottom">
+                        <span>Semester 1</span>
+                        <strong>9.11 / 10</strong>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="Result_item" id="Rfooter3">
+                <div class="sgpa-card">
+                    <div class="sgpa-top">
+                        <div>
+                        <p class="sgpa-label">current CGPA</p>
+                        <h2 >9.23</h2>
+                        <p class="sgpa-status">Excellent Performance</p>
+                        </div>
+                        <h2>🧑‍🎓</h2>
+                    </div>
+
+                    <div class="sgpa-progress">
+                        <div class="cgpa-fill"></div>
+                    </div>
+
+                    <div class="sgpa-bottom">
+                        <span>Semester 1</span>
+                        <strong>9.23/10</strong>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <!-- notice -->
+         <div class="notice-board" id="notice-board">
+
+            <div class="notice-heading">
+                <span>📢</span>
+                <h2>Notice Board</h2>
+            </div>
+
+            <div class="notice-list">
+
+                <div class="notice">
+                    <div class="notice-date">
+                        <strong>26</strong>
+                        <small>AUG</small>
+                    </div>
+
+                    <div class="notice-content">
+                        <h4>⚠️NCC Selection Process</h4>
+                        <p>Selection process will be conducted at EE Block.</p>
+                    </div>
+                </div>
+
+                <div class="notice">
+                    <div class="notice-date">
+                        <strong>28</strong>
+                        <small>AUG</small>
+                    </div>
+
+                    <div class="notice-content">
+                        <h4>📝Assignment Submission</h4>
+                        <p> Assignment Submission Deadline – 30 August.</p>
+                    </div>
+                </div>
+
+                <div class="notice">
+                    <div class="notice-date">
+                        <strong>30</strong>
+                        <small>AUG</small>
+                    </div>
+
+                    <div class="notice-content">
+                        <h4>📢Internal Examination</h4>
+                        <p> End-Semester Examinations will commence from 15 September 2026.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="view-all">View All Notices →</button>
+
+        </div>
+
+        <!-- hostel and mess -->
+
+        <div class="hostel-detail" id="hmc">
+
+                <div class="hostel-name">
+                    <img class="hostel-img" src="image.png" alt="v">
+                    <div>
+                        <h2>Hostel & Mess</h2>
+                        <p>Campus Accommodation</p>
+                    </div>
+                </div>
+
+                <div class="hostel-info">
+
+                    <div class="info-box">
+                        <p>🛏️</p>
+                        <div>
+                            <small>Hostel:</small>
+                            <strong>PAPUM</strong>
+                        </div>
+                    </div>
+
+                     <div class="info-box">
+                        <div>
+                            <div class="small"><small >Acedmic Year:</small><strong>2026-2027📆</strong></div>
+                           <div class="small"><small>Status: </small> PAID ✅</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p>🚪</p>
+                        <div>
+                            <small>Room No.:</small>
+                            <strong>337</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mess-section">
+                    <h3>🍽️ Today's Mess Menu</h3>
+
+                    <div class="meal">
+                        <span>🌅 Breakfast</span>
+                        <strong>Aloo Paratha & Chai</strong>
+                    </div>
+
+                    <div class="meal">
+                        <span>☀️ Lunch</span>
+                        <strong>Rice, Roti, Dal & Aloo Sabji</strong>
+                    </div>
+
+                    <div class="meal">
+                        <span>🌙 Dinner</span>
+                        <strong>Roti, Paneer & Rice</strong>
+                    </div>
+                </div>
+
+                <button class="hostel-btn">View Hostel Details →</button>
+
+         </div>
+        
+    </div>
+    
+</body>
+</html>
