@@ -1,2 +1,2 @@
-# NitapDashboard
+# Nitap-Dashboard
 Student Dashboard website
